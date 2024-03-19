@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
 from pages.base_page import Page
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class CompanyConnectPage(Page):
@@ -33,7 +34,13 @@ class CompanyConnectPage(Page):
         assert len(self.TEST_NUMBER) == len(self.TEST_NUMBER)
         assert len(self.AGENTS_IN_COMPANY) == len(self.AGENTS_IN_COMPANY)
         assert len(self.EMAIL_2) == len(self.EMAIL_2)
-        sleep(2)
+        self.wait.until(EC.presence_of_element_located(self.YOUR_COUNTRY))
+        self.wait.until(EC.presence_of_element_located(self.COMPANY_NAME))
+        self.wait.until(EC.presence_of_element_located(self.POSITION))
+        self.wait.until(EC.presence_of_element_located(self.TEST_NAME))
+        self.wait.until(EC.presence_of_element_located(self.TEST_NUMBER))
+        self.wait.until(EC.presence_of_element_located(self.AGENTS_IN_COMPANY))
+        self.wait.until(EC.presence_of_element_located(self.EMAIL_2))
 
     def verify_request_button(self):
         self.driver.find_element(*self.SEND_REQUEST_BTN)
