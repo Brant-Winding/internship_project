@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
 from pages.base_page import Page
@@ -24,8 +25,8 @@ class MainPage(Page):
         self.input_text('test@example.com', *self.EMAIL)
         self.input_text('Test009.', *self.PASSWORD)
         self.click(*self.CONTINUE_BTN)
-        sleep(3)
+        self.wait.until(EC.element_to_be_clickable(self.CONTINUE_BTN))
 
     def company_connect(self):
         self.click(*self.COMPANY_CONNECT_BTN)
-        sleep(2)
+        self.wait.until(EC.element_to_be_clickable(self.COMPANY_CONNECT_BTN))

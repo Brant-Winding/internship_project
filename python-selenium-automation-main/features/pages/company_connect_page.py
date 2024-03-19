@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
 from pages.base_page import Page
@@ -23,7 +24,6 @@ class CompanyConnectPage(Page):
         self.input_text('123+test+careerist', *self.TEST_NUMBER)
         self.input_text('10', *self.AGENTS_IN_COMPANY)
         self.input_text('test@example.com', *self.EMAIL_2)
-        sleep(2)
 
     def verify_test_info(self):
         assert len(self.YOUR_COUNTRY) == len(self.YOUR_COUNTRY)
@@ -37,8 +37,8 @@ class CompanyConnectPage(Page):
 
     def verify_request_button(self):
         self.driver.find_element(*self.SEND_REQUEST_BTN)
-        print('BTN Is Available')
+        self.wait.until(EC.presence_of_element_located(self.SEND_REQUEST_BTN))
 
     def verify_subscription_button(self):
         self.driver.find_element(*self.SUBSCRIPTION_BTN)
-        print('BTN Is Available')
+        self.wait.until(EC.presence_of_element_located(self.SUBSCRIPTION_BTN))
