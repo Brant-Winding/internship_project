@@ -24,9 +24,14 @@ class MainPage(Page):
     def login(self):
         self.input_text('test@example.com', *self.EMAIL)
         self.input_text('Test009.', *self.PASSWORD)
-        self.click(*self.CONTINUE_BTN)
         self.wait.until(EC.element_to_be_clickable(self.CONTINUE_BTN))
+        self.click(*self.CONTINUE_BTN)
+        # sleep(3)
 
     def company_connect(self):
-        self.click(*self.COMPANY_CONNECT_BTN)
+        self.wait.until(EC.visibility_of_element_located(self.COMPANY_CONNECT_BTN))
         self.wait.until(EC.element_to_be_clickable(self.COMPANY_CONNECT_BTN))
+        self.find_element(*self.COMPANY_CONNECT_BTN)
+        self.click(*self.COMPANY_CONNECT_BTN)
+
+
