@@ -26,7 +26,7 @@ class MainPage(Page):
         self.input_text('Test009.', *self.PASSWORD)
         self.wait.until(EC.element_to_be_clickable(self.CONTINUE_BTN))
         self.click(*self.CONTINUE_BTN)
-        # sleep(3)
+        sleep(3)
 
     def company_connect(self):
         self.wait.until(EC.visibility_of_element_located(self.COMPANY_CONNECT_BTN))
