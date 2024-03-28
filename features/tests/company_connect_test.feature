@@ -1,6 +1,7 @@
 # Created by brand at 3/17/2024
 Feature: Relly.oi Company connect test
 
+  @smoke
   Scenario: User clicks on “Connect the company” button and can use the form to register a new agency
     Given Open the main page
     When Log in to the page

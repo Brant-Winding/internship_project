@@ -1,0 +1,76 @@
+2024-03-28 14:45:01,365 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 14:45:59,591 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 14:46:03,852 - support.logger - INFO - Started step: <given "Open the main page">
+2024-03-28 14:46:03,853 - support.logger - INFO - Opening url https://soft.reelly.io/sign-in...
+2024-03-28 14:46:06,716 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-03-28 14:46:08,150 - support.logger - INFO - Clicking on for element ('link text', 'Continue')...
+2024-03-28 14:46:11,663 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-03-28 14:46:13,270 - support.logger - INFO - Searching for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 14:46:13,577 - support.logger - INFO - Clicking on for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 14:46:13,885 - support.logger - INFO - Started step: <when "Switch the new tab">
+2024-03-28 14:46:14,089 - support.logger - INFO - Started step: <then "Enter some test information in the form">
+2024-03-28 14:46:16,547 - support.logger - INFO - Started step: <then "Verify the right information is present">
+2024-03-28 14:46:17,571 - support.logger - INFO - Started step: <then "Verify “send request” button is available and clickable">
+2024-03-28 14:46:17,777 - support.logger - INFO - Started step: <then "Verify “buy a subscription” button is available and clickable">
+2024-03-28 15:32:48,271 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 15:32:52,802 - support.logger - INFO - Started step: <given "Open the main page">
+2024-03-28 15:32:52,802 - support.logger - INFO - Opening url https://soft.reelly.io/sign-in...
+2024-03-28 15:32:55,157 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-03-28 15:32:56,593 - support.logger - INFO - Clicking on for element ('link text', 'Continue')...
+2024-03-28 15:33:00,001 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-03-28 15:33:00,993 - support.logger - INFO - Searching for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 15:33:01,110 - support.logger - INFO - Clicking on for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 15:33:01,506 - support.logger - INFO - Started step: <when "Switch the new tab">
+2024-03-28 15:33:01,813 - support.logger - INFO - Started step: <then "Enter some test information in the form">
+2024-03-28 15:33:04,169 - support.logger - INFO - Started step: <then "Verify the right information is present">
+2024-03-28 15:33:05,193 - support.logger - INFO - Started step: <then "Verify “send request” button is available and clickable">
+2024-03-28 15:33:05,428 - support.logger - INFO - Started step: <then "Verify “buy a subscription” button is available and clickable">
+2024-03-28 15:33:06,628 - support.logger - INFO - Started scenario: User can search for a product
+2024-03-28 15:33:12,261 - support.logger - INFO - Started step: <given "Open Google page">
+2024-03-28 15:33:14,204 - support.logger - INFO - Started step: <when "Input Car into search field">
+2024-03-28 15:33:18,923 - support.logger - INFO - Started step: <when "Click on search icon">
+2024-03-28 15:33:25,650 - support.logger - INFO - Started step: <then "Product results for Car are shown">
+2024-03-28 15:35:02,801 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 15:35:09,508 - support.logger - INFO - Started step: <given "Open the main page">
+2024-03-28 15:35:09,510 - support.logger - INFO - Opening url https://soft.reelly.io/sign-in...
+2024-03-28 15:35:13,296 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-03-28 15:35:15,342 - support.logger - INFO - Clicking on for element ('link text', 'Continue')...
+2024-03-28 15:35:18,855 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-03-28 15:35:21,383 - support.logger - INFO - Searching for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 15:35:21,588 - support.logger - INFO - Clicking on for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 15:35:22,614 - support.logger - INFO - Started step: <when "Switch the new tab">
+2024-03-28 15:35:23,231 - support.logger - INFO - Started step: <then "Enter some test information in the form">
+2024-03-28 15:35:28,348 - support.logger - INFO - Started step: <then "Verify the right information is present">
+2024-03-28 15:35:29,782 - support.logger - INFO - Started step: <then "Verify “send request” button is available and clickable">
+2024-03-28 15:35:30,001 - support.logger - INFO - Started step: <then "Verify “buy a subscription” button is available and clickable">
+2024-03-28 15:35:31,320 - support.logger - INFO - Started scenario: User can search for a product
+2024-03-28 15:35:36,542 - support.logger - INFO - Started step: <given "Open Google page">
+2024-03-28 15:35:37,977 - support.logger - INFO - Started step: <when "Input Car into search field">
+2024-03-28 15:35:42,794 - support.logger - INFO - Started step: <when "Click on search icon">
+2024-03-28 15:35:47,168 - support.logger - INFO - Started step: <then "Product results for Car are shown">
+2024-03-28 16:30:28,134 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 16:30:34,451 - support.logger - INFO - Started step: <given "Open the main page">
+2024-03-28 16:30:34,452 - support.logger - INFO - Opening url https://soft.reelly.io/sign-in...
+2024-03-28 16:30:37,414 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-03-28 16:30:38,847 - support.logger - INFO - Clicking on for element ('link text', 'Continue')...
+2024-03-28 16:30:42,258 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-03-28 16:30:44,990 - support.logger - INFO - Searching for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 16:30:45,195 - support.logger - INFO - Clicking on for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 16:30:46,222 - support.logger - INFO - Started step: <when "Switch the new tab">
+2024-03-28 16:30:46,411 - support.logger - INFO - Started step: <then "Enter some test information in the form">
+2024-03-28 16:30:51,340 - support.logger - INFO - Started step: <then "Verify the right information is present">
+2024-03-28 16:30:52,363 - support.logger - INFO - Started step: <then "Verify “send request” button is available and clickable">
+2024-03-28 16:30:52,773 - support.logger - INFO - Started step: <then "Verify “buy a subscription” button is available and clickable">
+2024-03-28 16:35:32,876 - support.logger - INFO - Started scenario: User clicks on “Connect the company” button and can use the form to register a new agency
+2024-03-28 16:35:41,723 - support.logger - INFO - Started step: <given "Open the main page">
+2024-03-28 16:35:41,724 - support.logger - INFO - Opening url https://soft.reelly.io/sign-in...
+2024-03-28 16:35:46,416 - support.logger - INFO - Started step: <when "Log in to the page">
+2024-03-28 16:35:46,821 - support.logger - INFO - Clicking on for element ('link text', 'Continue')...
+2024-03-28 16:35:49,939 - support.logger - INFO - Started step: <when "Click on “Connect the company”">
+2024-03-28 16:35:51,432 - support.logger - INFO - Searching for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 16:35:51,448 - support.logger - INFO - Clicking on for element ('css selector', '[class="button-link-menu w-inline-block"]')...
+2024-03-28 16:35:51,665 - support.logger - INFO - Started step: <when "Switch the new tab">
+2024-03-28 16:35:51,761 - support.logger - INFO - Started step: <then "Enter some test information in the form">
+2024-03-28 16:35:54,516 - support.logger - INFO - Started step: <then "Verify the right information is present">
+2024-03-28 16:35:54,631 - support.logger - INFO - Started step: <then "Verify “send request” button is available and clickable">
+2024-03-28 16:35:54,660 - support.logger - INFO - Started step: <then "Verify “buy a subscription” button is available and clickable">

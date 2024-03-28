@@ -5,16 +5,21 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.options import Options
 
+from support.logger import logger
+
 from app.application import Application
 
+
+#  Run Behave tests with Allure results
+#  behave -f allure_behave.formatter:AllureFormatter -o test_results/ -t smoke
 
 def browser_init(context):
     """
     :param context: Behave context
     """
-    # driver_path = ChromeDriverManager().install()
-    # service = Service(driver_path)
-    # context.driver = webdriver.Chrome(service=service)
+    driver_path = ChromeDriverManager().install()
+    service = Service(driver_path)
+    context.driver = webdriver.Chrome(service=service)
 
     # driver_path = GeckoDriverManager().install()
     # service = Service(driver_path)
@@ -30,20 +35,20 @@ def browser_init(context):
 
     ### BROWSERSTACK ###
 
-    bs_user = 'brandtwinding_pYCbmc'
-    bs_key = 'mqCAyrcd22WxKr5TsK9T'
-    url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
-
-    options = Options()
-    bstack_options = {
-        'os': 'OS X',
-        'osVersion': 'Monterey',
-        'browserName': 'Chrome',
-        'browserVersion': 'latest',
-        'sessionName': 'User clicks on “Connect the company” button and can use the form to register a new agency'
-    }
-    options.set_capability('bstack:options', bstack_options)
-    context.driver = webdriver.Remote(command_executor=url, options=options)
+    # bs_user = 'brandtwinding_pYCbmc'
+    # bs_key = 'mqCAyrcd22WxKr5TsK9T'
+    # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
+    #
+    # options = Options()
+    # bstack_options = {
+    #     'os': 'OS X',
+    #     'osVersion': 'Monterey',
+    #     'browserName': 'Chrome',
+    #     'browserVersion': 'latest',
+    #     'sessionName': 'User clicks on “Connect the company” button and can use the form to register a new agency'
+    # }
+    # options.set_capability('bstack:options', bstack_options)
+    # context.driver = webdriver.Remote(command_executor=url, options=options)
 
     context.driver.maximize_window()
 
@@ -55,17 +60,20 @@ def browser_init(context):
 
 
 def before_scenario(context, scenario):
-    print('\nStarted scenario: ', scenario.name)
+    # print('\nStarted scenario: ', scenario.name)
+    logger.info(f'Started scenario: {scenario.name}')
     browser_init(context)
 
 
 def before_step(context, step):
-    print('\nStarted step: ', step)
+    logger.info(f'Started step: {step}')
+    # print('\nStarted step: ', step)
 
 
 def after_step(context, step):
     if step.status == 'failed':
-        print('\nStep failed: ', step)
+        # print('\nStep failed: ', step)
+        logger.error(f'Step failed: {step}')
 
 
 def after_scenario(context, feature):
