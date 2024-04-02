@@ -5,6 +5,7 @@ Feature: Relly.oi Company connect test
   Scenario: User clicks on “Connect the company” button and can use the form to register a new agency
     Given Open the main page
     When Log in to the page
+    When Click on menu
     And Click on “Connect the company”
     And Switch the new tab
     Then Enter some test information in the form

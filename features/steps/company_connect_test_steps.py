@@ -11,9 +11,14 @@ def log_in(context):
     context.app.main_page.login()
 
 
+@when('Click on menu')
+def click_menu(context):
+    context.app.main_page.click_menu()
+
+
 @when('Click on “Connect the company”')
 def click_on_company(context):
-    context.app.main_page.company_connect()
+    context.app.settings_page.company_connect()
 
 
 @when('Switch the new tab')

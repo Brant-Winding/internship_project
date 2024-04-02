@@ -9,7 +9,7 @@ class MainPage(Page):
     EMAIL = (By.ID, "email-2")
     PASSWORD = (By.ID, "field")
     CONTINUE_BTN = (By.LINK_TEXT, 'Continue')
-    COMPANY_CONNECT_BTN = (By.CSS_SELECTOR, '[class="button-link-menu w-inline-block"]')
+    MENU_BTN = (By.CSS_SELECTOR, '[class="menu-button-wrapper w-inline-block"]')
     YOUR_COUNTRY = (By.ID, 'Your-country')
     COMPANY_NAME = (By.ID, 'Company-name-2')
     POSITION = (By.ID, 'Position')
@@ -28,10 +28,8 @@ class MainPage(Page):
         self.click(*self.CONTINUE_BTN)
         sleep(3)
 
-    def company_connect(self):
-        self.wait.until(EC.visibility_of_element_located(self.COMPANY_CONNECT_BTN))
-        self.wait.until(EC.element_to_be_clickable(self.COMPANY_CONNECT_BTN))
-        self.find_element(*self.COMPANY_CONNECT_BTN)
-        self.click(*self.COMPANY_CONNECT_BTN)
-
-
+    def click_menu(self):
+        self.wait.until(EC.visibility_of_element_located(self.MENU_BTN))
+        self.wait.until(EC.element_to_be_clickable(self.MENU_BTN))
+        self.find_element(*self.MENU_BTN)
+        self.click(*self.MENU_BTN)
